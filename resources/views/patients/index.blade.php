@@ -85,11 +85,11 @@
                         <div class="panel-body">
                             <!-- Display Validation Errors -->
                             @include('common.errors')
-                            @if(session('status'))
-                                <div class="alert alert-success">
-                                {{session('status')}}
-                                </div>
-                            @endif
+                            <div ng-show="message" class="alert alert-info alert-dismissable">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                <span ng-bind="message"></span>
+                            </div>
+                            
                             <!-- New Patient Form -->
                             <form ng-submit="save_patient()" class="form-horizontal"  name = "userForm" novalidate>
                                 <input ng-model = "patient.info.patient_id" type="hidden" name="patient_id" id="patient-id">

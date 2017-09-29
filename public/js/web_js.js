@@ -160,6 +160,7 @@ app.controller("patientController", function ($timeout, $scope,$http) {
             $scope.patient.info.patient_id = response.data.patient_id;
             $scope.patient_info_button.text = 'Update';
             $scope.loading = false;
+            $scope.message = response.data.message;
             if($scope.patient_info_button.text == 'Save'){
                 var $active = $('.card .nav-tabs li.active');
                 $($active).next().find('a[data-toggle="tab"]').click();
@@ -195,7 +196,7 @@ app.controller("patientController", function ($timeout, $scope,$http) {
 
  
 $(document).ready(function(){
-    
+       
   $("form[name='searchForm'] input").focus();
     document.onkeydown = function (e) {
         switch (e.keyCode) {
