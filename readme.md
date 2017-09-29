@@ -1,5 +1,4 @@
-# Laravel Quickstart - Intermediate - Task List With Authentication
-
-https://laravel.com/docs/5.2/quickstart-intermediate
-# densys
+# Dental Information System
+#Under construction
+https://densys.000webhostapp.com
 # densys
